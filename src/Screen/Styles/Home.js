@@ -27,17 +27,18 @@ profileView:{
     marginLeft:SW(8),
 },
 profileText:{
-    fontFamily:fonts.poppinsSemiBold,
+    fontFamily:fonts.poppinsRegular,
     marginTop:SH(2.6),
     color:'black',
     marginLeft:SW(10),
+    fontWeight:'400',
 },
 profile:{
     width:RW(14),
     height:RW(14),
-    borderRadius:RW(7),
-    borderWidth:1,
-    borderColor:colors.WHITE_COLOR
+    // borderRadius:RW(7),
+    // borderWidth:1,
+    // borderColor:colors.WHITE_COLOR
 },
 container:{
     width:SW(94),
@@ -46,7 +47,7 @@ container:{
     backgroundColor:colors.WHITE_COLOR,
     borderRadius:10,
     marginTop:SH(2),
-    shadowColor: colors.BLACK_COLOR,
+    shadowColor: 'red',
 shadowOffset: {
 	width: 0,
 	height: 2,
@@ -87,7 +88,7 @@ search:{
 },
 searchBox:{
   width:SW(90),
-    height:SH(6),
+    height:SH(5),
     backgroundColor:colors.WHITE_COLOR,
     borderRadius:SW(2),
     marginTop:SH(12),
@@ -106,15 +107,13 @@ searchIcon:{
     marginLeft:RW(2),
 },
 carImage:{
-    width:SW(80),
+    width:SW(90),
     height:SH(30),
     resizeMode:'contain',
-    marginTop:SH(2),
+    marginTop:SH(1),
     marginBottom:SH(2),
-    marginHorizontal:SW(7),
-    borderRadius:SW(2),
-    borderWidth:1,
-    borderColor:colors.BLACK_COLOR,
+    marginHorizontal:SW(2),
+    borderRadius:SW(1),
 },
 carDetails:{
     flexDirection:'row',
@@ -122,9 +121,13 @@ carDetails:{
     marginHorizontal:SW(7),
 },
 carName:{
-    fontFamily:fonts.poppinsSemiBold,
+    fontFamily:fonts.poppinsRegular,
     fontSize:SF(2.5),
     color:colors.BLACK_COLOR,
+    marginTop:SH(1),
+    marginLeft:SW(5),
+    textAlign:'left',
+    fontWeight:'600',
 },
 carPrice:{
     fontFamily:fonts.poppinsSemiBold,
@@ -142,10 +145,10 @@ RatingIcon:{
     marginTop:SH(1),
 },
 carName2:{
-  fontFamily:fonts.poppinsMedium,
+  fontFamily:fonts.poppinsRegular,
     fontSize:SF(2.2),
-    color:"gray",
-
+    color:"black",
+    fontWeight:'600',
 }
 
 

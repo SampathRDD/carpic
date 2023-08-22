@@ -167,7 +167,6 @@ const LoginScreen = ({navigation}) => {
               }}
               ref={passwordRef}
             />
-            <Image source={images.EyeC} style={styles.eye} />
             </View>
           <View style={{alignItems: 'flex-start', marginLeft: wp(13)}}>
             <Text style={{fontSize: RF(1.3), color: 'red'}}>

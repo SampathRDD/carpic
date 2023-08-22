@@ -116,11 +116,12 @@ export default StyleSheet.create({
       },
       signupTxt: {
         fontSize: RF(1.8),
-        color: 'blue',
+        color: 'red',
         marginTop:hp(1),
         textAlign:'center',
         justifyContent:'center',
         fontFamily:fonts.poppinsRegular,
+        fontWeight:'bold',
       },
       codeInput: {
         borderWidth: 10,

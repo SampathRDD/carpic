@@ -131,7 +131,7 @@ const RegisterScreen = (props) => {
               justifyContent: 'center',
               marginBottom: hp(4),
             }}>
-            <Text style={styles.acountTxt}>You AllReady have an account?</Text>
+            <Text style={styles.acountTxt}>You, have an account?</Text>
             <TouchableOpacity onPress={()=> props.navigation.navigate('LoginScreen')}>
               <Text style={styles.signupTxt}>  Sign in</Text>
             </TouchableOpacity>
@@ -248,7 +248,7 @@ const RegisterScreen = (props) => {
               }}
               ref={passwordRef}
             />
-            <Image source={images.EyeC} style={styles.eye} />
+            
             </View>
           <View style={{alignItems: 'flex-start', marginLeft: wp(13)}}>
             <Text style={{fontSize: RF(1.3), color: 'red'}}>

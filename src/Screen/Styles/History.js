@@ -29,13 +29,13 @@ export default StyleSheet.create({
         },
     headerImageView: {
         width: "100%",
-        height: 200,
+        height: 150,
         alignItems: "center",
         justifyContent: "center"
         },
     headerImage: {
-        width: 200,
-        height: 200,
+        width: 150,
+        height: 150,
         resizeMode: "contain"
         },
     scrollView: {
@@ -45,18 +45,28 @@ export default StyleSheet.create({
     historycontainer: {
         width: "95%",
         height: 80,
-        borderWidth: 1,
         borderRadius: 10,
-        borderColor: "#000",
         marginVertical: 10,
         flexDirection: "row",
         alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#fff",
+        shadowColor: "red",
+        shadowOffset: {
+        width: 0,
+        height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5
         },
     historyImage: {
-        width: 80,
-        height: 80,
+        width: 60,
+        height: 60,
         resizeMode: "contain",
         borderRadius:40,
+        marginRight: 10,
+        marginLeft: 10
         },
     h1: {
         width: "50%",
@@ -81,7 +91,7 @@ export default StyleSheet.create({
             fontFamily: fonts.poppinsRegular,
             color:'#000',
             marginTop:8,
-            fontWeight:'bold'
+            fontWeight:'600'
         },
         locationIcon:{
             width:50,

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, SafeAreaView,ScrollView, Text, View } from 'react-native'
+import { Image, SafeAreaView,ScrollView, Text, TouchableOpacity, View } from 'react-native'
 import styles from '../Styles/History';
 import { images } from '../../constants/images';
 
@@ -42,26 +42,29 @@ const HistoryScreen = () => {
 
       <View>
         <View style={styles.header}>
-          <Text style={styles.headerText}>Welcome to </Text>
+          <Text style={styles.headerText}>Welcome to Your History !</Text>
         </View>
         <View style={styles.headerImageView}>
-          <Image source={images.Logo} style={styles.headerImage} />
+          <Image source={images.Cab} style={styles.headerImage} />
 
         </View>
         <ScrollView showsVerticalScrollIndicator={false}
         >
           <View style={styles.scrollView}>
           {data.map((item) => (
-            <View style={styles.historycontainer} key={item.id}>
-              <Image source={images.Logo} style={styles.historyImage} />
+            <TouchableOpacity  key={item.id}>
+            <View style={styles.historycontainer}>
+              <Image source={images.Car} style={styles.historyImage} />
               <View style={styles.h1}>
                 <Text style={styles.locationtext}>{item.location}</Text>
                 <Text style={styles.Datetext}>{item.date}</Text>
               </View>
               <View style={styles.h2}>
-                <Image source={images.Logo} style={styles.locationIcon} />
+                <Image source={images.Destination} style={styles.locationIcon} />
               </View>
-            </View>))}
+            </View>
+            </TouchableOpacity>
+            ))}
           </View>
         </ScrollView>
       </View>
